@@ -1,0 +1,136 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f7ff !important;
+}
+
+.contenedor-persona{
+    padding: 10px;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #bbc8d1;
+    margin-top: 10px;
+}
+
+.fondo-contenedor{
+    padding: 10px;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #bbc8d1;
+}
+
+.section{
+    /*background-color: #eef2f4;*/
+    border: 1px solid #bbc8d1;
+    padding: 0;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tile{
+    margin: 2px;
+    width: 330px;
+    height: 40px;
+    position: relative;
+    border: 1px solid #d8dee0;
+    border-radius: 10px;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    outline: none;
+    box-shadow: 15px 15px 25px rgba(2,28,53,0.05);
+}
+
+input[type="checkbox"]:after{
+    position: absolute;
+    font-family: 'bootstrap-icons';    
+    font-weight: 400;
+    content: "\F28A";
+    font-size: 20px;
+    top: -2px;
+    left: 2px;
+    color: #e2e6f3;
+}
+
+input[type="checkbox"]:hover{
+    transform: scale(1.04);
+    border: 1px solid #d8dee0;
+    border-radius: 10px;
+}
+
+input[type="checkbox"]:checked{
+    border: 2px solid #acd6f8;
+}
+
+input[type="checkbox"]:checked:after{
+    font-weight: 900;
+    content: "\F26A";
+    color: #acd6f8;
+}
+
+.tile label{
+    position: absolute;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 80%;
+    width: 100%;
+    margin-left: 20px;
+    
+    bottom: 0;
+    cursor: pointer;
+}
+
+label .size-bi{
+    font-size: 10px;
+    color: #2c2c51;
+}
+
+label:hover{
+    transform: scale(1.00);
+}
+
+input[type="checkbox"]:checked + label .size-bi{
+    animation: grow 0.5s;
+}
+
+@keyframes grow{
+    50%{
+        font-size: 12px;
+    }
+}
+
+label h6{
+    font-family: "Poppins", sans-serif;
+    font-size: 11.4px;
+    font-weight: 400;
+    color: #7b7b93;
+    /*border: 1px solid black;*/
+    width: 90%;
+    /*float: right;*/
+/*    display: flex;*/
+    /*text-align: center;*/
+    /*align-items: center;*/
+    word-break:break-word;
+    /*margin: 0 0 1em 1em;*/
+}
