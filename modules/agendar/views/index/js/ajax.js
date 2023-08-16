@@ -45,7 +45,7 @@ $(document).ready(function(){
                         content +='</div>';  
                         content +='</div>';           
                         content +='<div class="col-md-auto">';
-                            content +='<a class="btn btn-outline-secondary position-relative btn-sm" data-toggle="modal" data-target="#modal_pres'+ datos[i].Id_reserva+'"><i title="Selección de prestaciones" class="bi bi-list-task"></i> Prestaciones <span id="count-pres_'+ datos[i].Id_reserva+'" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">'+datos[i].Total_prest+'<span class="visually-hidden">New alerts</span></span></a>';
+                            content +='<a class="btn btn-outline-secondary position-relative btn-sm" data-toggle="modal" data-target="#modal_pres'+ datos[i].Id_reserva+'" id="modal_presb'+datos[i].Id_reserva+'"><i title="Selección de prestaciones" class="bi bi-list-task"></i> Prestaciones <span id="count-pres_'+ datos[i].Id_reserva+'" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">'+datos[i].Total_prest+'<span class="visually-hidden">New alerts</span></span></a>';
                         content +='</div>';
                         content +='<div class="col col-md-4">';
                         content +='';
@@ -126,6 +126,7 @@ $(document).ready(function(){
             }
             
             $('#cuposagenda').append(content); 
+
             hidePleaseWait();
         }, 'json');
         
@@ -237,7 +238,7 @@ $(document).ready(function(){
                                                 content +='</div>'; 
                                                 content +='</div>'; 
                                                 content +='<div class="col-md-auto">';
-                                                    content +='<a class="btn btn-outline-secondary position-relative btn-sm" data-toggle="modal" data-target="#modal_pres'+addcupos[i].idr+'"><i title="Selección de prestaciones" class="bi bi-list-task"></i> Prestaciones <span id="count-pres_1" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">0<span class="visually-hidden">New alerts</span></span></a>';
+                                                    content +='<a class="btn btn-outline-secondary position-relative btn-sm" data-toggle="modal" data-target="#modal_pres'+addcupos[i].idr+'"><i title="Selección de prestaciones" class="bi bi-list-task"></i> Prestaciones <span id="count-pres_'+addcupos[i].idr+'" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">0<span class="visually-hidden">New alerts</span></span></a>';
                                                 content +='</div>';
                                             content +='</div>';
                                         content +='</div>';

@@ -16,6 +16,7 @@
     <div class="col-lg-3" style="">
         <label class="control-label">Laboratorio:</label>
         <select name="lab" id="lab" class="form-select">
+            <option value="">--Seleccione clínica--</option>
             <option value="1">Principal - La Serena</option>
         </select>
     </div>

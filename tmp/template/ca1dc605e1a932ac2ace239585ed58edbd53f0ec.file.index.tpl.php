@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.11, created on 2023-06-29 18:10:21
+<?php /* Smarty version Smarty-3.1.11, created on 2023-08-16 17:05:34
          compiled from "C:\xampp\htdocs\medlaboral\modules\agendar\views\index\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:467455135649daced0d6a50-81629899%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ca1dc605e1a932ac2ace239585ed58edbd53f0ec' => 
     array (
       0 => 'C:\\xampp\\htdocs\\medlaboral\\modules\\agendar\\views\\index\\index.tpl',
-      1 => 1656622841,
+      1 => 1692198328,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.11',
   'unifunc' => 'content_649daced14aff9_77581556',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_649daced14aff9_77581556')) {function content_649daced14aff9_77581556($_smarty_tpl) {?><div class="container">
 <h3>Agendar</h3>
@@ -37,6 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="col-lg-3" style="">
         <label class="control-label">Laboratorio:</label>
         <select name="lab" id="lab" class="form-select">
+            <option value="">--Seleccione clínica--</option>
             <option value="1">Principal - La Serena</option>
         </select>
     </div>

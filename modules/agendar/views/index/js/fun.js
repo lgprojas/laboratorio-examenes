@@ -41,6 +41,21 @@ $(document).ready(function(){
         $('#count-cupos').append(sum);
     });
 
+/*
+    //Contar prestaciones
+    
+    $(document).on("click", "select.countprest",function() {
+        
+        $('#count-cupos').html('');
+        var sum = 0;
+        $("select.countprest option:selected").each(function(){            
+            if($(this).val()){
+               sum += Number($(this).val());
+            }            
+        });
+        
+        $('#count-cupos').append(sum);
+    });*/
 
 
 });
